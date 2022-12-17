@@ -1,8 +1,7 @@
 import { Btn, Wrapper } from './Button.styled';
 import PropTypes from 'prop-types';
 
-export const FeedbackOptions = ({ onClick }) => {
-  const options = ['good', 'neutral', 'bad'];
+export const FeedbackOptions = ({ onClick, options }) => {
   return (
     <Wrapper>
       {options.map(option => (
