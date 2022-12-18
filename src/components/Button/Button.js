@@ -19,5 +19,7 @@ export const FeedbackOptions = ({ onClick, options }) => {
 };
 
 FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.oneOf(['good', 'neutral', 'bed']))
+    .isRequired,
   onClick: PropTypes.func.isRequired,
 };
